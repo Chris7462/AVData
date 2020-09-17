@@ -53,7 +53,7 @@ source devel/setup.bash
 To get with quickly started, download the [sample data](https://ford-multi-av-seasonal.s3-us-west-2.amazonaws.com/Sample-Data.tar.gz "SampleData").
 In order to download more data, visit the [download](https://avdata.ford.com/downloads/default.aspx "Downloads") page of the website.
 
-[Zip the image files]
+[Zip the image files]  
 Because the png image can't read as soon as the rate to publish the topic, the "zip.py" file can resize the full png image to the thumbnail which size is same as the topic "image_front_left" in the bag. Load the "zip.py" in the "Sample-Data" file downloaded above (or other folder safe all png images). 
 
 ```
@@ -71,7 +71,7 @@ In order to run the demo, you will need the rosbag, maps and the calibration fil
 roslaunch ford_demo demo.launch map_dir:=/path/to/map/folder/ calibration_dir:=/path/to/calibration/folder/
 ```
 
-[Run the ros nodes]
+[Run the ros nodes]  
 Subscribe the timestamp of the topic "image_front_left" and publish the thumbnails of another five cameras.
 
 ```
