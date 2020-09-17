@@ -1,6 +1,9 @@
 # Ford AV Dataset Tutorial -- Combine the camera image to rosbag
 This Tutorial contains installation instructions for the packages released along with Ford Multi AV Dataset. For more details please visit the website.
 
+This code also integrated the ROS nodes of sensors.
+The ROS code was implemented by Yu-Chung Tsai, National Central University, Tawian.
+
 ## Website
 
 To get more details about the Ford AV Dataset, please visit [avdata.ford.com](https://avdata.ford.com/)
@@ -50,6 +53,7 @@ source devel/setup.bash
 To get with quickly started, download the [sample data](https://ford-multi-av-seasonal.s3-us-west-2.amazonaws.com/Sample-Data.tar.gz "SampleData").
 In order to download more data, visit the [download](https://avdata.ford.com/downloads/default.aspx "Downloads") page of the website.
 
+[Zip the image files]
 Because the png image can't read as soon as the rate to publish the topic, the "zip.py" file can resize the full png image to the thumbnail which size is same as the topic "image_front_left" in the bag. Load the "zip.py" in the "Sample-Data" file downloaded above (or other folder safe all png images). 
 
 ```
@@ -67,6 +71,7 @@ In order to run the demo, you will need the rosbag, maps and the calibration fil
 roslaunch ford_demo demo.launch map_dir:=/path/to/map/folder/ calibration_dir:=/path/to/calibration/folder/
 ```
 
+[Run the ros nodes]
 Subscribe the timestamp of the topic "image_front_left" and publish the thumbnails of another five cameras.
 
 ```
