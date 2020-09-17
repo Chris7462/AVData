@@ -72,11 +72,13 @@ roslaunch ford_demo demo.launch map_dir:=/path/to/map/folder/ calibration_dir:=/
 ```
 
 [Run the ros nodes]  
-Subscribe the timestamp of the topic "image_front_left" and publish the thumbnails of another five cameras.
+Subscribe the timestamp of the topic "image_front_left" and publish the thumbnails of another five cameras.  
 
 ```
 python2.7 step1.py
 ``` 
+If you want to get the data for further processing, you can modify step1.py.  
+
 
 In a new terminal, run the rosbag file
 
