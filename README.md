@@ -85,7 +85,7 @@ To view the live lidar pointcloud, in a new terminal, run the launch file
 roslaunch ford_demo multi_lidar_convert.launch
 ```
 
-![picture](https://github.com/Ford/AVData/blob/master/ford_demo/doc/rviz.gif "rviz_gif")
+![picture](https://github.com/TsaiYC73/AVData/blob/master/ford_demo/doc/rviz.gif "rviz_gif")
 
 In order to convert bag files to human readable csv files, we provide a python script ```bag_to_csv.py```. This python script uses a yaml config file to determine which topics need to be converted to csv files. A sample config.yaml file is provided in the ford_demo/scripts folder. In order to convert a bag file, run the the following command
 
