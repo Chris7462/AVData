@@ -86,7 +86,7 @@ class Integrate():
     print(file_name)
     ''''''
     # Read images
-    imgs = [cv2.imread('../Ford_Data/Sample/zip/'+fo+'/'+file_name+'.png') for fo in ['FR','RR','RL','SR','SL'] ]
+    imgs = [cv2.imread('./Sample-Data/zip/'+fo+'/'+file_name+'.png') for fo in ['FR','RR','RL','SR','SL'] ]
     # Convert to Image msg
     imgs_msg = [self.bridge.cv2_to_imgmsg(imgs[i], "bgr8") for i in range(5)]
     # Publish to topic
