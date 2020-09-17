@@ -28,7 +28,7 @@ Clone the latest version from this repository into your catkin workspace and com
 
 ```
 cd catkin_ws/src
-git clone https://github.com/Ford/AVData.git
+git clone https://github.com/kuoshih/AVData.git
 cd ../
 catkin_make
 source devel/setup.bash
